@@ -1,9 +1,9 @@
 from sympy import *
+import numpy as np
 
-M = Matrix([[1, 0, 8, 0],
-            [0, 1, 0, 0],
-            [0, 0, 1, 8],
-            [8, 0, 0, 1]])
+M = Matrix([[0, np.sqrt(2), 0],
+            [-1*np.sqrt(2), 0, np.sqrt(2)],
+            [0, -1*np.sqrt(2), 0]])
 
 print("Matrix:", M)
 P, D = M.diagonalize()

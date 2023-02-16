@@ -13,3 +13,4 @@ b = 4
 # nquad(defined_integrand, [[xbounds],[ybounds],...], args=(function arguments))
 I = nquad(integrand, [[0, 1], [0, np.inf]], args=(a, b))
 print(I)
+
